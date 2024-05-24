@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--<link href="\css/bootstrap.min.css" rel="stylesheet" >-->
+        <link href="style.css" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="https://pixinvent.com/stack-responsive-bootstrap-4-admin-template/app-assets/css/bootstrap-extended.min.css">
+        <link rel="stylesheet" type="text/css" href="https://pixinvent.com/stack-responsive-bootstrap-4-admin-template/app-assets/fonts/simple-line-icons/style.min.css">
+        <link rel="stylesheet" type="text/css" href="https://pixinvent.com/stack-responsive-bootstrap-4-admin-template/app-assets/css/colors.min.css">
+        <link rel="stylesheet" type="text/css" href="https://pixinvent.com/stack-responsive-bootstrap-4-admin-template/app-assets/css/bootstrap.min.css">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+        
+        <script src="script.js"></script>
+
+        <title>SQDPM</title>
+    </head>
+
+    <body>
+       <div class="right-panel">
+            <header id="header" class="navbar header row">
+        
+                            <div class="col-5">
+                                <div class="header-left">
+                                    <div class="input-group">
+                                        <span class="input-group-text" id="basic-addon1">
+                                          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                                             <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"></path>
+                                         </svg>
+                                        </span>
+                                        <input type="text" class="form-control" placeholder="Input group example" aria-label="Input group example" aria-describedby="basic-addon1">
+                                      </div>
+                                </div>
+                            </div>
+                            <div class="col-push-7" style=" align-self: flex-end;">
+                                    <button type="button" class="btn btn-secondary">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bell" viewBox="0 0 16 16">
+                                          <path d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2M8 1.918l-.797.161A4 4 0 0 0 4 6c0 .628-.134 2.197-.459 3.742-.16.767-.376 1.566-.663 2.258h10.244c-.287-.692-.502-1.49-.663-2.258C12.134 8.197 12 6.628 12 6a4 4 0 0 0-3.203-3.92zM14.22 12c.223.447.481.801.78 1H1c.299-.199.557-.553.78-1C2.68 10.2 3 6.88 3 6c0-2.42 1.72-4.44 4.005-4.901a1 1 0 1 1 1.99 0A5 5 0 0 1 13 6c0 .88.32 4.2 1.22 6"></path>
+                                         </svg>
+                                      </button>
+                                      <button type="button" class="btn btn-secondary">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
+                                        <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0"></path>
+                                        <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1"></path>
+                                        </svg>
+                                      </button>
+                               
+                            </div>
+                
+            </header>
+
+            <div class="breadcramb">
+                <div class="page-header page-title"> <h1>Home</h1></div>
+                <div class=""></div>
+            </div>
+
+          <main role="main">
+            <div class="content"> <!--main content -->
+                <div class="row justify-content-center" style="flex-direction: row;">
+    
+                    <div class="col-6 col-md-4 col-lg-3 mb-4">
+                    
+                        <div class="card" id="security">
+                            <div class="card-header" >
+                                <h1 id="card1-title">Security</h1>
+                                <!--<h5 class="card-title mb-0" >Security</h5>-->
+                            </div>
+                            <div class="card-body">
+                                <div class="calendar text-center">
+                                    <div class="month">
+                                        <button class="prev" onclick="prevMonth()">&#10094;</button>
+                                        <span id="month-year1"></span>
+                                        <button class="next" onclick="nextMonth()">&#10095;</button>
+                                    </div>
+                                    <div class="weekdays">
+                                        <div>Sun</div>
+                                        <div>Mon</div>
+                                        <div>Tue</div>
+                                        <div>Wed</div>
+                                        <div>Thu</div>
+                                        <div>Fri</div>
+                                        <div>Sat</div>
+                                    </div>
+                                    <div class="days" id="days1"></div>
+                                </div>
+                                <script src="script.js"></script>
+                            </div>
+                            <div class="card-body">
+                                <h5> This some text .</h5>
+                                <h5> This some other text .</h5>
+                            </div>
+    
+                            <div class="card-body grey-bg container-fluid" onclick="location.href='#';"  style="cursor: pointer;"> <!--button to create new report-->
+                                <div class="media d-flex">
+                                    <div class="align-self-center">
+                                        <i class="icon-pencil primary font-large-2 float-left"></i>
+                                    </div>
+                                    <div class="media-body text-right">
+                                        <h2>Action plan</h2>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="col-6 col-md-4 col-lg-3 mb-4">
+                    
+                        <div class="card" id="quality">
+                            <div class="card-header" >
+                                <h1 id="card1-title">Quality</h1>
+                                <!--<h5 class="card-title mb-0" >Security</h5>-->
+                            </div>
+                            
+                            <div class="card-body">
+                                <div class="calendar text-center">
+                                    <div class="month">
+                                        <button class="prev" onclick="prevMonth()">&#10094;</button>
+                                        <span id="month-year2"></span>
+                                        <button class="next" onclick="nextMonth()">&#10095;</button>
+                                    </div>
+                                    <div class="weekdays">
+                                        <div>Sun</div>
+                                        <div>Mon</div>
+                                        <div>Tue</div>
+                                        <div>Wed</div>
+                                        <div>Thu</div>
+                                        <div>Fri</div>
+                                        <div>Sat</div>
+                                    </div>
+                                    <div class="days" id="days2"></div>
+                                </div>
+                                <script src="script.js"></script>
+                            </div>
+
+                            <div class="card-body">
+                                <ol>
+                                    <li>
+                                        <h5>Some information : 55 cm</h5>
+                                    </li>
+                                    <li>
+                                        <h5>Some information : 90 m</h5>
+                                    </li>
+                                </ol>
+                            </div>
+    
+                            <div class="card-body text-center"> <!--chart-->
+                                <div>
+                                    <canvas id="myChart2" style=" width: 300px;"></canvas>
+                                  </div>
+                                  
+                                  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+                                  
+                                  <script>
+                                    const ctx2 = document.getElementById('myChart2');
+                                  
+                                    new Chart(ctx2, {
+                                      type: 'pie',
+                                      data: {
+                                        labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+                                        datasets: [{
+                                          label: '# of Votes',
+                                          data: [12, 19, 3, 5, 2, 3],
+                                          borderWidth: 1
+                                        }]
+                                      },
+                                      options: {
+                                        scales: {
+                                          y: {
+                                            beginAtZero: true
+                                          }
+                                        }
+                                      }
+                                    });
+                                  </script>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-6 col-md-4 col-lg-3 mb-4">
+                    
+                        <div class="card" id="quality">
+                            <div class="card-header" >
+                                <h1 id="card1-title">Cost</h1>
+                                
+                            </div>
+                            <div class="card-body">
+                                <div class="calendar" style="margin: 0%;">
+                                    <div class="month">
+                                        <button class="prev" onclick="prevMonth()">&#10094;</button>
+                                        <span id="month-year3"></span>
+                                        <button class="next" onclick="nextMonth()">&#10095;</button>
+                                    </div>
+                                    <div class="weekdays">
+                                        <div>Sun</div>
+                                        <div>Mon</div>
+                                        <div>Tue</div>
+                                        <div>Wed</div>
+                                        <div>Thu</div>
+                                        <div>Fri</div>
+                                        <div>Sat</div>
+                                    </div>
+                                    <div class="days" id="days3"></div>
+                                </div>
+                                <script src="script.js"></script>
+                            </div>
+
+                            <div class="card-body">
+                                <ol>
+                                    <li>
+                                        <h5>Some information : 55 cm</h5>
+                                    </li>
+                                    <li>
+                                        <h5>Some information : 90 m</h5>
+                                    </li>
+                                </ol>
+                            </div>
+    
+                            <div class="card-body text-center"> <!--button to create new report-->
+                                <div>
+                                    <canvas id="myChart3" style="height: 10em;"></canvas>
+                                  </div>
+                                  
+                                  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+                                  
+                                  <script>
+                                    const ctx3 = document.getElementById('myChart3');
+                                  
+                                    new Chart(ctx3, {
+                                      type: 'pie',
+                                      data: {
+                                        labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+                                        datasets: [{
+                                          label: '# of Votes',
+                                          data: [12, 19, 3, 5, 2, 3],
+                                          borderWidth: 1
+                                        }]
+                                      },
+                                      options: {
+                                        scales: {
+                                          y: {
+                                            beginAtZero: true
+                                          }
+                                        }
+                                      }
+                                    });
+                                  </script>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-6 col-md-4 col-lg-3 mb-4">
+                    
+                        <div class="card" id="quality">
+                            <div class="card-header" >
+                                <h1 id="card1-title">Delivery</h1>
+                            </div>
+                            <div class="card-body">
+                                <div class="calendar" style="margin: 0%;">
+                                    <div class="month">
+                                        <button class="prev" onclick="prevMonth()">&#10094;</button>
+                                        <span id="month-year4"></span>
+                                        <button class="next" onclick="nextMonth()">&#10095;</button>
+                                    </div>
+                                    <div class="weekdays">
+                                        <div>Sun</div>
+                                        <div>Mon</div>
+                                        <div>Tue</div>
+                                        <div>Wed</div>
+                                        <div>Thu</div>
+                                        <div>Fri</div>
+                                        <div>Sat</div>
+                                    </div>
+                                    <div class="days" id="days4"></div>
+                                </div>
+                                <script src="script.js"></script>
+                            </div>
+
+                            <div class="card-body">
+                                <ol>
+                                    <li>
+                                        <h5>Some information : 55 cm</h5>
+                                    </li>
+                                    <li>
+                                        <h5>Some information : 90 m</h5>
+                                    </li>
+                                </ol>
+                            </div>
+    
+                            <div class="card-body"> <!--chart-->
+                                <div>
+                                    <canvas id="myChart4" style="height: 10em;"></canvas>
+                                  </div>
+                                  
+                                  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+                                  
+                                  <script>
+                                    const ctx4 = document.getElementById('myChart4');
+                                  
+                                    new Chart(ctx4, {
+                                      type: 'pie',
+                                      data: {
+                                        labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+                                        datasets: [{
+                                          label: '# of Votes',
+                                          data: [12, 19, 3, 5, 2, 3],
+                                          borderWidth: 1
+                                        }]
+                                      },
+                                      options: {
+                                        scales: {
+                                          y: {
+                                            beginAtZero: true
+                                          }
+                                        }
+                                      }
+                                    });
+                                  </script>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-6 col-md-4 col-lg-3 mb-4">
+                    
+                        <div class="card" id="quality">
+                            <div class="card-header" >
+                                <h1 id="card1-title">People</h1>
+                            </div>
+                            <div class="card-body">
+                                <div class="calendar" style="margin: 0%;">
+                                    <div class="month">
+                                        <button class="prev" onclick="prevMonth()">&#10094;</button>
+                                        <span id="month-year5"></span>
+                                        <button class="next" onclick="nextMonth()">&#10095;</button>
+                                    </div>
+                                    <div class="weekdays">
+                                        <div>Sun</div>
+                                        <div>Mon</div>
+                                        <div>Tue</div>
+                                        <div>Wed</div>
+                                        <div>Thu</div>
+                                        <div>Fri</div>
+                                        <div>Sat</div>
+                                    </div>
+                                    <div class="days" id="days5"></div>
+                                </div>
+                                <script src="script.js"></script>
+                            </div>
+
+                            <div class="card-body">
+                                <ol>
+                                    <li>
+                                        <h5>Some information : 55 cm</h5>
+                                    </li>
+                                    <li>
+                                        <h5>Some information : 90 m</h5>
+                                    </li>
+                                </ol>
+                            </div>
+    
+                            <div class="card-body"> <!--t-->
+                                <div>
+                                    <canvas id="myChart" style="height: 10em;"></canvas>
+                                  </div>
+                                  
+                                  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+                                  
+                                  <script>
+                                    const ctx = document.getElementById('myChart');
+                                  
+                                    new Chart(ctx, {
+                                      type: 'pie',
+                                      data: {
+                                        labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+                                        datasets: [{
+                                          label: '# of Votes',
+                                          data: [12, 19, 3, 5, 2, 3],
+                                          borderWidth: 1
+                                        }]
+                                      },
+                                      options: {
+                                        scales: {
+                                          y: {
+                                            beginAtZero: true
+                                          }
+                                        }
+                                      }
+                                    });
+                                  </script>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+    
+    
+                <div class="row">
+                    <div class="col-sm-6">
+                        <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Special title treatment</h5>
+                            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Special title treatment</h5>
+                            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Special title treatment</h5>
+                            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Special title treatment</h5>
+                            <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                        </div>
+                    </div>
+                 </div>
+
+                
+    
+    
+                <!--
+                    <div class="card  mb-3" style="text-transform: none;">
+                    <div class="card-header">
+                    <h5 class="card-title mb-0">Profile Details</h5>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                    
+                    <h1 class="card-title mb-0" style="display: inline;">S</h1>
+                    <h5 class="card-title mb-0" style="display: inline;">ecurity</h5>
+                    </div>
+                    <hr class="my-0">
+                    <div class="card-body">
+                    <h5 class="h6 card-title">Skills</h5>
+                    <a href="#" class="badge bg-primary me-1 my-1">HTML</a>
+                    <a href="#" class="badge bg-primary me-1 my-1">JavaScript</a>
+                    </div>
+                    <hr class="my-0">
+                    <div class="card-body">
+                    <h5 class="h6 card-title">About</h5>
+                    <ul class="list-unstyled mb-0">
+                        <li class="mb-1">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-home feather-sm me-1">
+                            <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                            <polyline points="9 22 9 12 15 12 15 22"></polyline>
+                        </svg> Lives in <a href="#">San Francisco, SA</a>
+                        </li>
+                        <li class="mb-1">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-briefcase feather-sm me-1">
+                            <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+                            <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+                        </svg> Works at <a href="#">GitHub</a>
+                        </li>
+                        <li class="mb-1">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-map-pin feather-sm me-1">
+                            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                            <circle cx="12" cy="10" r="3"></circle>
+                        </svg> From <a href="#">Boston</a>
+                        </li>
+                    </ul>
+                    </div>
+                </div>
+                -->
+            
+               </div>
+          </main>
+       </div>
+
+       <footer class="text-center text-lg-start" style="background-color: #3c6a98;">
+        <div class="container d-flex justify-content-center py-5">
+          <button type="button" class="btn btn-primary btn-lg btn-floating mx-2" style="background-color: #54456b;">
+            <i class="fab fa-facebook-f"></i>
+          </button>
+          <button type="button" class="btn btn-primary btn-lg btn-floating mx-2" style="background-color: #54456b;">
+            <i class="fab fa-youtube"></i>
+          </button>
+          <button type="button" class="btn btn-primary btn-lg btn-floating mx-2" style="background-color: #54456b;">
+            <i class="fab fa-instagram"></i>
+          </button>
+          <button type="button" class="btn btn-primary btn-lg btn-floating mx-2" style="background-color: #54456b;">
+            <i class="fab fa-twitter"></i>
+          </button>
+        </div>
+    
+        <!-- Copyright -->
+        <div class="text-center text-white p-3" style="background-color: rgb(67, 91, 152);">
+          © 2020 Copyright:
+          <a class="text-white" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+          <a href="https://www.flaticon.com" >icons created by Pixel perfect - Flaticon</a>
+        </div>
+        <!-- Copyright -->
+      </footer>
+      </body>
+</html>
