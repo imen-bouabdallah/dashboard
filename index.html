@@ -2,7 +2,6 @@
 <html>
     <head>
         <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <!--<link href="\css/bootstrap.min.css" rel="stylesheet" >-->
         <link href="style.css" rel="stylesheet">
@@ -20,7 +19,7 @@
 
     <body>
        <div class="right-panel">
-            <header id="header" class="navbar header row">
+            <header id="header" class="navbar header">
         
                             <div class="col-5">
                                 <div class="header-left">
@@ -34,13 +33,16 @@
                                       </div>
                                 </div>
                             </div>
-                            <div class="col-push-7" style=" align-self: flex-end;">
-                                    <button type="button" class="btn btn-secondary">
+                            <div class="col-push-7" style=" align-self: flex-end;  display: flex;">
+                                    <p id="todayDate" class="text-center justify-content-center" style="margin-right: 5px;">Today date </p>
+                                    
+                                    
+                                    <button type="button" class="btn btn-secondary" id="notification" style="margin-right: 5px;">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bell" viewBox="0 0 16 16">
                                           <path d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2M8 1.918l-.797.161A4 4 0 0 0 4 6c0 .628-.134 2.197-.459 3.742-.16.767-.376 1.566-.663 2.258h10.244c-.287-.692-.502-1.49-.663-2.258C12.134 8.197 12 6.628 12 6a4 4 0 0 0-3.203-3.92zM14.22 12c.223.447.481.801.78 1H1c.299-.199.557-.553.78-1C2.68 10.2 3 6.88 3 6c0-2.42 1.72-4.44 4.005-4.901a1 1 0 1 1 1.99 0A5 5 0 0 1 13 6c0 .88.32 4.2 1.22 6"></path>
                                          </svg>
                                       </button>
-                                      <button type="button" class="btn btn-secondary">
+                                      <button type="button" class="btn btn-secondary" id="login">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
                                         <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0"></path>
                                         <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1"></path>
@@ -53,14 +55,13 @@
 
             <div class="breadcramb">
                 <div class="page-header page-title"> <h1>Home</h1></div>
-                <div class=""></div>
-            </div>
+                </div>
 
           <main role="main">
-            <div class="content"> <!--main content -->
-                <div class="row justify-content-center" style="flex-direction: row;">
+            <div class="content mt-5"> <!--main content -->
+                <div class="row justify-content-center" style="margin: 5px; gap: 15px;">
     
-                    <div class="col-6 col-md-4 col-lg-3 mb-4">
+                    <div class=" col-lg-2-4  d-flex align-items-stretch">
                     
                         <div class="card" id="security">
                             <div class="card-header" >
@@ -92,7 +93,7 @@
                                 <h5> This some other text .</h5>
                             </div>
     
-                            <div class="card-body grey-bg container-fluid" onclick="location.href='#';"  style="cursor: pointer;"> <!--button to create new report-->
+                            <div class="card-body grey-bg " onclick="location.href='#';"  style="cursor: pointer;"> <!--button to create new report-->
                                 <div class="media d-flex">
                                     <div class="align-self-center">
                                         <i class="icon-pencil primary font-large-2 float-left"></i>
@@ -105,7 +106,7 @@
                         </div>
                     </div>
     
-                    <div class="col-6 col-md-4 col-lg-3 mb-4">
+                    <div class=" col-lg-2-4 d-flex align-items-stretch">
                     
                         <div class="card" id="quality">
                             <div class="card-header" >
@@ -178,9 +179,9 @@
                         </div>
                     </div>
 
-                    <div class="col-6 col-md-4 col-lg-3 mb-4">
+                    <div class=" col-lg-2-4 d-flex align-items-stretch">
                     
-                        <div class="card" id="quality">
+                        <div class="card" id="cost">
                             <div class="card-header" >
                                 <h1 id="card1-title">Cost</h1>
                                 
@@ -250,9 +251,9 @@
                         </div>
                     </div>
 
-                    <div class="col-6 col-md-4 col-lg-3 mb-4">
+                    <div class=" col-lg-2-4  d-flex align-items-stretch">
                     
-                        <div class="card" id="quality">
+                        <div class="card" id="delivery">
                             <div class="card-header" >
                                 <h1 id="card1-title">Delivery</h1>
                             </div>
@@ -321,13 +322,13 @@
                         </div>
                     </div>
 
-                    <div class="col-6 col-md-4 col-lg-3 mb-4">
+                    <div class=" col-lg-2-4 d-flex align-items-stretch ">
                     
-                        <div class="card" id="quality">
+                        <div class="card text-center" id="people">
                             <div class="card-header" >
                                 <h1 id="card1-title">People</h1>
                             </div>
-                            <div class="card-body">
+                            <div class="card-body justify-content-centerr">
                                 <div class="calendar" style="margin: 0%;">
                                     <div class="month">
                                         <button class="prev" onclick="prevMonth()">&#10094;</button>
@@ -395,7 +396,7 @@
                 </div>
     
     
-                <div class="row">
+                <!--<div class="row">
                     <div class="col-sm-6">
                         <div class="card">
                         <div class="card-body">
@@ -432,7 +433,7 @@
                         </div>
                         </div>
                     </div>
-                 </div>
+                 </div>-->
 
                 
     

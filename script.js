@@ -46,3 +46,10 @@ function nextMonth() {
     currentYear = (currentMonth === 0) ? currentYear + 1 : currentYear;
     showCalendar(currentMonth, currentYear);
 }
+
+// Get current date and time
+var now = new Date();
+var datetime = now.toISOString().slice(0, 10);
+
+// Insert date and time into HTML
+document.getElementById("todayDate").value = datetime;

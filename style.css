@@ -225,3 +225,15 @@ body {
         flex-direction: column;
     }
 }
+
+.col-lg-2-4 {
+    flex: 0 0 auto;
+    max-width: 18.33%;
+}
+
+@media (min-width: 992px) { /* lg breakpoint */
+    .col-lg-2-4 {
+        flex: 0 0 auto;
+        max-width: 18.33%; /* 2.4 columns */
+    }
+}
