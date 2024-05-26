@@ -264,3 +264,35 @@ body {
     width: 100%;
   }
 }
+
+/* Extra small devices (phones, less than 768px) */
+@media (max-width: 767px) {
+  .col-lg-2-4 {
+    flex: 0 0 100%; /* Occupy full width */
+    max-width: 100%;
+  }
+}
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .col-lg-2-4 {
+    flex: 0 0 50%; /* Occupy half width */
+    max-width: 50%;
+  }
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .col-lg-2-4 {
+    flex: 0 0 18.33%; /* Occupy one-third width */
+    max-width: 18.33%;
+  }
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .col-lg-2-4 {
+    flex: 0 0 18.33%; /* Occupy one-fourth width */
+    max-width: 18.33%;
+  }
+}
