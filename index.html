@@ -5,7 +5,6 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <!--<link href="\css/bootstrap.min.css" rel="stylesheet" >-->
         <link href="style.css" rel="stylesheet">
-        <link rel="stylesheet" href="https://imen-bouabdallah.github.io/dashboard/style.css">
 
 
         <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
@@ -16,6 +15,8 @@
         <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
         
         <script src="script.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
 
         <title>SQDPM</title>
     </head>
@@ -74,9 +75,9 @@
                             <div class="card-body">
                                 <div class="calendar text-center">
                                     <div class="month">
-                                        <button class="prev" onclick="prevMonth()">&#10094;</button>
+                                        <button class="prev" onclick="prevMonth(1)">&#10094;</button>
                                         <span id="month-year1"></span>
-                                        <button class="next" onclick="nextMonth()">&#10095;</button>
+                                        <button class="next" onclick="nextMonth(1)">&#10095;</button>
                                     </div>
                                     <div class="weekdays">
                                         <div>Sun</div>
@@ -120,9 +121,9 @@
                             <div class="card-body">
                                 <div class="calendar text-center">
                                     <div class="month">
-                                        <button class="prev" onclick="prevMonth()">&#10094;</button>
+                                        <button class="prev" onclick="prevMonth(2)">&#10094;</button>
                                         <span id="month-year2"></span>
-                                        <button class="next" onclick="nextMonth()">&#10095;</button>
+                                        <button class="next" onclick="nextMonth(2)">&#10095;</button>
                                     </div>
                                     <div class="weekdays">
                                         <div>Sun</div>
@@ -154,7 +155,6 @@
                                     <canvas id="myChart2" style=" width: 300px;"></canvas>
                                   </div>
                                   
-                                  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
                                   
                                   <script>
                                     const ctx2 = document.getElementById('myChart2');
@@ -174,7 +174,8 @@
                                           y: {
                                             beginAtZero: true
                                           }
-                                        }
+                                        },
+                                        maintainAspectRatio : false //so it rezises with the screen
                                       }
                                     });
                                   </script>
@@ -192,9 +193,9 @@
                             <div class="card-body">
                                 <div class="calendar" style="margin: 0%;">
                                     <div class="month">
-                                        <button class="prev" onclick="prevMonth()">&#10094;</button>
+                                        <button class="prev" onclick="prevMonth(3)">&#10094;</button>
                                         <span id="month-year3"></span>
-                                        <button class="next" onclick="nextMonth()">&#10095;</button>
+                                        <button class="next" onclick="nextMonth(3)">&#10095;</button>
                                     </div>
                                     <div class="weekdays">
                                         <div>Sun</div>
@@ -225,9 +226,7 @@
                                 <div>
                                     <canvas id="myChart3" style="height: 10em;"></canvas>
                                   </div>
-                                  
-                                  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-                                  
+                                                                    
                                   <script>
                                     const ctx3 = document.getElementById('myChart3');
                                   
@@ -246,7 +245,8 @@
                                           y: {
                                             beginAtZero: true
                                           }
-                                        }
+                                        },
+                                        maintainAspectRatio : false //so it rezises with the screen
                                       }
                                     });
                                   </script>
@@ -263,9 +263,9 @@
                             <div class="card-body">
                                 <div class="calendar" style="margin: 0%;">
                                     <div class="month">
-                                        <button class="prev" onclick="prevMonth()">&#10094;</button>
+                                        <button class="prev" onclick="prevMonth(4)">&#10094;</button>
                                         <span id="month-year4"></span>
-                                        <button class="next" onclick="nextMonth()">&#10095;</button>
+                                        <button class="next" onclick="nextMonth(4)">&#10095;</button>
                                     </div>
                                     <div class="weekdays">
                                         <div>Sun</div>
@@ -281,7 +281,7 @@
                                 <script src="script.js"></script>
                             </div>
 
-                            <div class="card-body">
+                            <div class="card-body ">
                                 <ol>
                                     <li>
                                         <h5>Some information : 55 cm</h5>
@@ -296,9 +296,7 @@
                                 <div>
                                     <canvas id="myChart4" style="height: 10em;"></canvas>
                                   </div>
-                                  
-                                  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-                                  
+                                                                    
                                   <script>
                                     const ctx4 = document.getElementById('myChart4');
                                   
@@ -317,7 +315,8 @@
                                           y: {
                                             beginAtZero: true
                                           }
-                                        }
+                                        },
+                                        maintainAspectRatio : false //so it rezises with the screen
                                       }
                                     });
                                   </script>
@@ -327,16 +326,16 @@
 
                     <div class=" col-lg-2-4 d-flex align-items-stretch ">
                     
-                        <div class="card text-center" id="people">
+                        <div class="card" id="people">
                             <div class="card-header" >
                                 <h1 id="card1-title">People</h1>
                             </div>
-                            <div class="card-body justify-content-centerr">
+                            <div class="card-body ">
                                 <div class="calendar" style="margin: 0%;">
                                     <div class="month">
-                                        <button class="prev" onclick="prevMonth()">&#10094;</button>
+                                        <button class="prev" onclick="prevMonth(5)">&#10094;</button>
                                         <span id="month-year5"></span>
-                                        <button class="next" onclick="nextMonth()">&#10095;</button>
+                                        <button class="next" onclick="nextMonth(5)">&#10095;</button>
                                     </div>
                                     <div class="weekdays">
                                         <div>Sun</div>
@@ -363,13 +362,11 @@
                                 </ol>
                             </div>
     
-                            <div class="card-body"> <!--t-->
+                            <div class="card-body justify-content-center text-center"> <!--t-->
                                 <div>
                                     <canvas id="myChart" style="height: 10em;"></canvas>
                                   </div>
-                                  
-                                  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-                                  
+                                                                    
                                   <script>
                                     const ctx = document.getElementById('myChart');
                                   
@@ -388,7 +385,8 @@
                                           y: {
                                             beginAtZero: true
                                           }
-                                        }
+                                        },
+                                        maintainAspectRatio : false //so it rezises with the screen
                                       }
                                     });
                                   </script>

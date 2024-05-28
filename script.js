@@ -35,16 +35,16 @@ function showCalendar(month, year, itemNumber) {
     }
 }
 
-function prevMonth() {
+function prevMonth(itemNumber) {
     currentMonth = (currentMonth === 0) ? 11 : currentMonth - 1;
     currentYear = (currentMonth === 11) ? currentYear - 1 : currentYear;
-    showCalendar(currentMonth, currentYear);
+    showCalendar(currentMonth, currentYear, itemNumber);
 }
 
-function nextMonth() {
+function nextMonth(itemNumber) {
     currentMonth = (currentMonth === 11) ? 0 : currentMonth + 1;
     currentYear = (currentMonth === 0) ? currentYear + 1 : currentYear;
-    showCalendar(currentMonth, currentYear);
+    showCalendar(currentMonth, currentYear, itemNumber);
 }
 
 // Get current date and time
