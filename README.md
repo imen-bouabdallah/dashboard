@@ -2,6 +2,6 @@ Link: https://imen-bouabdallah.github.io/dashboard/
 
 A page built according to the following wireframe
 
-![Welcome page](icons/figma.jpeg)
+![Welcome page](pics/figma.jpeg)
 
-![Data entry](icons/figma-page2.jpeg)
+![Data entry](pics/figma-page2.jpeg)
