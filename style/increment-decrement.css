@@ -1,0 +1,46 @@
+
+.input-group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    box-shadow: 2px 3px 4px rgba(0, 0, 0, 0.3), 4px 7px 15px rgba(0, 0, 0, 0.2),
+      9px 15px 25px rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+    max-width: 200px;
+  }
+  
+.sideButton,
+  input {
+    outline: none;
+    border: none;
+    padding: 10px;
+    font-size: 18px;
+  }
+  
+  input {
+    width: 100%;
+    text-align: center;
+  }
+  
+.sideButton {
+    cursor: pointer;
+  }
+.sideButton:nth-last-child(1) {
+    border-bottom-right-radius: 15px;
+    border-top-right-radius: 15px;
+  }
+.sideButton:nth-child(1) {
+    border-bottom-left-radius: 15px;
+    border-top-left-radius: 15px;
+  }
+  
+.sideButton:hover {
+    background-color: #e6e6e6;
+  }
+.sideButton:nth-last-child(1):active {
+    box-shadow: inset -4px 5px 10px rgba(0, 0, 0, 0.5);
+  }
+.sideButton:nth-child(1):active {
+    box-shadow: inset 4px 5px 10px rgba(0, 0, 0, 0.5);
+  }

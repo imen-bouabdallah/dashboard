@@ -3,7 +3,10 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link href="style.css" rel="stylesheet">
+        <link href="style/style.css" rel="stylesheet">
+        <link href="style/increment-decrement.css" rel="stylesheet">
+
+        
 
 
         <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
@@ -24,15 +27,163 @@
 
         <div class="breadcramb">
             <div class="page-header page-title row"> 
-                <div class="col-2"><a class="btn btn-outline-secondary" href="#" role="button">go back</a>
+                <div class="col-12 col-md-2"><a class="btn btn-outline-secondary" href="#" role="button">go back</a>
                 </div>
-                <div class="col-10 text-center"> <h1>Daily data update</h1></div>
+                <div class="col-12 col-md-10 text-center"> <h1>Daily data update</h1></div>
             </div>
         </div>
 
-        <div class="row mt-3">
-            <div class="col" >test</div>
-            <div class="col  text-right">test2</div>
+        <div class="container mt-5">
+            <div class="row mt-3">
+                <!-- the values -->
+                <div class="col-12 col-md-8">
+                    <div class="form-inline">
+                        <h5>Today's data</h5>
+                    </div>
+        
+                    <!-- value 1 -->
+                    <form class="form-inline mb-3">
+                        <div class="form-group col-12 col-md-4">
+                            <label for="value" class="col-7 col-form-label">Safety</label>
+                            <input class="col-5 form-control" id="value" type="number" value="0">
+                        </div>
+                        <div class="form-group col-12 col-md-4">
+                            <label for="DDADate" class="col-5 col-form-label">DDA</label>
+                            <input id="DDADate" type="date" class="col-7 form-control">
+                        </div>
+                        <div class="form-group col-12 col-md-4">
+                            <label for="RECValue" class="col-5 col-form-label">REC</label>
+                            <input id="RECValue" type="number" class="col-7 form-control">
+                        </div>
+                    </form>
+        
+                    <!-- value 2 -->
+                    <form class="form-inline mb-3">
+                        <div class="form-group col-12 col-md-4">
+                            <label for="valueQ" class="col-7 col-form-label">Quality</label>
+                            <input class="col-5 form-control" id="valueQ" type="number" value="0">
+                        </div>
+                        <div class="form-group col-12 col-md-4">
+                            <label for="NBNC" class="col-5 col-form-label">NB NC</label>
+                            <input id="NBNC" type="number" class="col-7 form-control">
+                        </div>
+                        <div class="form-group col-12 col-md-4">
+                            <label for="NBRW" class="col-5 col-form-label">NB RW</label>
+                            <input id="NBRW" type="number" class="col-7 form-control">
+                        </div>
+                    </form>
+        
+                    <!-- value 3 -->
+                    <form class="form-inline mb-3">
+                        <div class="form-group col-12 col-md-4">
+                            <label for="valueD" class="col-7 col-form-label">Delivery</label>
+                            <input class="col-5 form-control" id="valueD" type="number" value="0">
+                        </div>
+                        <div class="form-group col-12 col-md-4"></div>
+                        <div class="form-group col-12 col-md-4"></div>
+                    </form>
+        
+                    <!-- value 4 -->
+                    <form class="form-inline mb-3">
+                        <div class="form-group col-12 col-md-4">
+                            <label for="valueP" class="col-7 col-form-label">Personel</label>
+                            <input class="col-5 form-control" id="valueP" type="number" value="0">
+                        </div>
+                        <div class="form-group col-12 col-md-4"></div>
+                        <div class="form-group col-12 col-md-4"></div>
+                    </form>
+        
+                    <!-- value 5 -->
+                    <form class="form-inline mb-3">
+                        <div class="form-group col-12 col-md-4">
+                            <label for="valueM" class="col-7 col-form-label">Maintenance</label>
+                            <input class="col-5 form-control" id="valueM" type="number" value="0">
+                        </div>
+                        <div class="form-group col-12 col-md-4">
+                            <label for="MTBF" class="col-5 col-form-label">MTBF</label>
+                            <input id="MTBF" type="number" class="col-7 form-control">
+                        </div>
+                        <div class="form-group col-12 col-md-4">
+                            <label for="MTTR" class="col-5 col-form-label">MTTR</label>
+                            <input id="MTTR" type="number" class="col-7 form-control">
+                        </div>
+                    </form>
+                </div>
+        
+                <!-- the triggers -->
+                <div class="col-12 col-md-4">
+                    <div class="form-inline">
+                        <div class="col-12 col-md-4 col-sm-8 text-center">Max</div>
+                        <div class="col-12 col-md-4 col-sm-8 text-center">Moy</div>
+                        <div class="col-12 col-md-4 col-sm-8 text-center">Min</div>
+                    </div>
+        
+                    <!-- value 1 -->
+                    <div class="form-inline mb-3">
+                        <div class="form-group col-12 col-md-4 col-sm-8">
+                            <input class="form-control" id="max1" type="number" value="0">
+                        </div>
+                        <div class="form-group col-12 col-md-4 col-sm-8">
+                            <input class="form-control" id="moy1" type="number" value="0">
+                        </div>
+                        <div class="form-group col-12 col-md-4 col-sm-8">
+                            <input class="form-control" id="min1" type="number" value="0">
+                        </div>
+                    </div>
+        
+                    <!-- value 2 -->
+                    <div class="form-inline mb-3">
+                        <div class="form-group col-12 col-md-4 col-sm-8">
+                            <input class="form-control" id="max2" type="number" value="0">
+                        </div>
+                        <div class="form-group col-12 col-md-4 col-sm-8">
+                            <input class="form-control" id="moy2" type="number" value="0">
+                        </div>
+                        <div class="form-group col-12 col-md-4 col-sm-8">
+                            <input class="form-control" id="min2" type="number" value="0">
+                        </div>
+                    </div>
+        
+                    <!-- value 3 -->
+                    <div class="form-inline mb-3">
+                        <div class="form-group col-12 col-md-4 col-sm-8">
+                            <input class="form-control" id="max3" type="number" value="0">
+                        </div>
+                        <div class="form-group col-12 col-md-4 col-sm-8">
+                            <input class="form-control" id="moy3" type="number" value="0">
+                        </div>
+                        <div class="form-group col-12 col-md-4 col-sm-8">
+                            <input class="form-control" id="min3" type="number" value="0">
+                        </div>
+                    </div>
+        
+                    <!-- value 4 -->
+                    <div class="form-inline mb-3">
+                        <div class="form-group col-12 col-md-4 col-sm-8">
+                            <input class="form-control" id="max4" type="number" value="0">
+                        </div>
+                        <div class="form-group col-12 col-md-4 col-sm-8">
+                            <input class="form-control" id="moy4" type="number" value="0">
+                        </div>
+                        <div class="form-group col-12 col-md-4 col-sm-8">
+                            <input class="form-control" id="min4" type="number" value="0">
+                        </div>
+                    </div>
+        
+                    <!-- value 5 -->
+                    <div class="form-inline mb-3">
+                        <div class="form-group col-12 col-md-4 col-sm-8">
+                            <input class="form-control" id="max5" type="number" value="0">
+                        </div>
+                        <div class="form-group col-12 col-md-4 col-sm-8">
+                            <input class="form-control" id="moy5" type="number" value="0">
+                        </div>
+                        <div class="form-group col-12 col-md-4 col-sm-8">
+                            <input class="form-control" id="min5" type="number" value="0">
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
 
     </body>
