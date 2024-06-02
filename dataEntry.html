@@ -25,9 +25,13 @@
        
         
 
-        <div class="breadcramb">
-            <div class="page-header page-title row"> 
-                <div class="col-12 col-md-2"><a class="btn btn-outline-secondary" href="#" role="button">go back</a>
+        <div class="breadcramb blue-bg">
+            <div class="page-header page-title row ml-1" > 
+                <div class="col-12 col-md-2"><a class="btn btn-outline-secondary" href="#" role="button">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-left" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8"/>
+                      </svg>
+                </a>
                 </div>
                 <div class="col-12 col-md-10 text-center"> <h1>Daily data update</h1></div>
             </div>
@@ -113,78 +117,88 @@
                 <!-- the triggers -->
                 <div class="col-12 col-md-4">
                     <div class="form-inline">
-                        <div class="col-12 col-md-4 col-sm-8 text-center">Max</div>
-                        <div class="col-12 col-md-4 col-sm-8 text-center">Moy</div>
-                        <div class="col-12 col-md-4 col-sm-8 text-center">Min</div>
+                        
+                        <div class="col"> <h5>Max</h5></div>
+                    <div class="col"><h5>Moy</h5></div>
+                    <div class="col"><h5>Min</h5></div>
                     </div>
         
                     <!-- value 1 -->
                     <div class="form-inline mb-3">
                         <div class="form-group col-12 col-md-4 col-sm-8">
-                            <input class="form-control" id="max1" type="number" value="0">
+                            <input class="form-control col" id="max1" type="number" value="0">
                         </div>
                         <div class="form-group col-12 col-md-4 col-sm-8">
-                            <input class="form-control" id="moy1" type="number" value="0">
+                            <input class="form-control col" id="moy1" type="number" value="0">
                         </div>
                         <div class="form-group col-12 col-md-4 col-sm-8">
-                            <input class="form-control" id="min1" type="number" value="0">
+                            <input class="form-control col" id="min1" type="number" value="0">
                         </div>
                     </div>
         
                     <!-- value 2 -->
                     <div class="form-inline mb-3">
                         <div class="form-group col-12 col-md-4 col-sm-8">
-                            <input class="form-control" id="max2" type="number" value="0">
+                           <input class="form-control col" id="max2" type="number" value="0">
                         </div>
                         <div class="form-group col-12 col-md-4 col-sm-8">
-                            <input class="form-control" id="moy2" type="number" value="0">
+                            <input class="form-control col" id="moy2" type="number" value="0">
                         </div>
                         <div class="form-group col-12 col-md-4 col-sm-8">
-                            <input class="form-control" id="min2" type="number" value="0">
+                            <input class="form-control col" id="min2" type="number" value="0">
                         </div>
                     </div>
         
                     <!-- value 3 -->
                     <div class="form-inline mb-3">
-                        <div class="form-group col-12 col-md-4 col-sm-8">
-                            <input class="form-control" id="max3" type="number" value="0">
+                        <div class="form-group col-12 col-md-4 col-sm-10">
+                            <input class="form-control col" id="max3" type="number" value="0">
+                        </div>
+                        <div class="form-group col-12 col-md-4 col-sm-10">
+                            <input class="form-control col" id="moy3" type="number" value="0">
                         </div>
                         <div class="form-group col-12 col-md-4 col-sm-8">
-                            <input class="form-control" id="moy3" type="number" value="0">
-                        </div>
-                        <div class="form-group col-12 col-md-4 col-sm-8">
-                            <input class="form-control" id="min3" type="number" value="0">
+                            <input class="form-control col" id="min3" type="number" value="0">
                         </div>
                     </div>
         
                     <!-- value 4 -->
                     <div class="form-inline mb-3">
                         <div class="form-group col-12 col-md-4 col-sm-8">
-                            <input class="form-control" id="max4" type="number" value="0">
+                            <input class="form-control col" id="max4" type="number" value="0">
                         </div>
                         <div class="form-group col-12 col-md-4 col-sm-8">
-                            <input class="form-control" id="moy4" type="number" value="0">
+                            <input class="form-control col" id="moy4" type="number" value="0">
                         </div>
                         <div class="form-group col-12 col-md-4 col-sm-8">
-                            <input class="form-control" id="min4" type="number" value="0">
+                            <input class="form-control col" id="min4" type="number" value="0">
                         </div>
                     </div>
         
                     <!-- value 5 -->
                     <div class="form-inline mb-3">
-                        <div class="form-group col-12 col-md-4 col-sm-8">
-                            <input class="form-control" id="max5" type="number" value="0">
+                        <div class="form-group col-12 col-md-4 ">
+                            <input class="form-control col" id="max5" type="number" value="0">
                         </div>
-                        <div class="form-group col-12 col-md-4 col-sm-8">
-                            <input class="form-control" id="moy5" type="number" value="0">
+                        
+                        <div class="form-group col-12 col-md-4 ">
+                            <input class="form-control col" id="moy5" type="number" value="0">
                         </div>
-                        <div class="form-group col-12 col-md-4 col-sm-8">
-                            <input class="form-control" id="min5" type="number" value="0">
+                        <div class="form-group col-12 col-md-4 ">
+                            <input class="form-control col" id="min5" type="number" value="0">
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+
+
+        <footer class="Fixedfooter">
+            <div class="container">
+              <div class="float-left"><h5>Access Mode: Viewer</h5></div>
+              <div class="float-right"><button type="button" class="btn btn-success">Save</button></div>
+            </div>
+          </footer>
 
     </body>
 </html>
