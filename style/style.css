@@ -144,7 +144,9 @@ body {
     background-color: #718ba7;
 }
 
-
+.grey-bg {  
+  background-color: #ebf3fa;
+}
 
 .chart {
     padding: 20px;
@@ -200,9 +202,11 @@ body {
 .Fixedfooter {
   position: fixed;
   left: 0;
+  right: 0;
   bottom: 0;
   width: 100%;
   background-color: #718ba7;
   color: white;
   text-align: center;
+  z-index: 9999;
 }

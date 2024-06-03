@@ -25,20 +25,52 @@
        
         
 
-        <div class="breadcramb blue-bg">
-            <div class="page-header page-title row ml-1" > 
-                <div class="col-12 col-md-2"><a class="btn btn-outline-secondary" href="#" role="button">
+        <header class=" blue-bg overflow-hidden">
+            <div class="navbar navbar-expand-md" > 
+                <a class="btn btn-outline-secondary navbar-brand" href="index.html" role="button">
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-left" viewBox="0 0 16 16">
                         <path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8"/>
                       </svg>
                 </a>
+                
+                 <h1 class="mr-auto text-white">Daily data update</h1>
+                 <div class="float-right border border-secondary rounded text-white" style="padding: 5px;"><h6>Access Mode: Viewer</h6></div>
+            </div>
+        </header>
+
+        <div class="breadcrumbs mt-2">
+            <div class="container row">
+                <div class="col-12 col-md-8">
+                    <form class="form-inline">
+                        <div class="form-group col-12 col-md-4">
+                            <label for="year" class="col-7 col-form-label">Year</label>
+                            <input class="col-5 form-control" id="year" type="number" value="2024">
+                        </div>
+                        <div class="form-group col-12 col-md-4">
+                            <label for="month" class="col-5 col-form-label">Month</label>
+                            <input id="month" type="date" class="col-7 form-control" min="1" max="12">
+                        </div>
+                        <div class="form-group col-12 col-md-4">
+                            <label for="day" class="col-5 col-form-label">Day</label>
+                            <input id="day" type="number" class="col-7 form-control" min="1" max="31">
+                        </div>
+                    </form>
                 </div>
-                <div class="col-12 col-md-10 text-center"> <h1>Daily data update</h1></div>
+    
+                <div class="col-12 col-md-4">
+                    <form class="form-inline ">
+                        <div class="form-group float-right">
+                            <label for="emplNumber" class="col-9 col-form-label">Employees number</label>
+                            <input class="col-3 form-control" id="emplNumber" type="number" value="0">
+                        </div>
+                    </form>
+                </div>
             </div>
         </div>
 
-        <div class="container mt-5">
-            <div class="row mt-3">
+      <main role="main" >
+        <div class="container pb-5">
+            <div class="row mt-2 border border-secondary rounded pt-1 mb-5">
                 <!-- the values -->
                 <div class="col-12 col-md-8">
                     <div class="form-inline">
@@ -96,6 +128,7 @@
                         <div class="form-group col-12 col-md-4"></div>
                         <div class="form-group col-12 col-md-4"></div>
                     </form>
+                    
         
                     <!-- value 5 -->
                     <form class="form-inline mb-3">
@@ -111,6 +144,11 @@
                             <label for="MTTR" class="col-5 col-form-label">MTTR</label>
                             <input id="MTTR" type="number" class="col-7 form-control">
                         </div>
+                    </form>
+
+                    <!-- save button-->
+                    <form class="row mb-3 float-right ">
+                        <button type="button" class="btn btn-success mr-2">Save</button>
                     </form>
                 </div>
         
@@ -188,15 +226,25 @@
                             <input class="form-control col" id="min5" type="number" value="0">
                         </div>
                     </div>
+                    <!-- save button-->
+                    <form class="row mb-3 float-right ">
+                        <button type="button" class="btn btn-success mr-2">Save</button>
+                    </form>
+                    
                 </div>
             </div>
         </div>
+      </main>
 
 
-        <footer class="Fixedfooter">
+        <footer class="Fixedfooter overflow-hidden p-1">
             <div class="container">
-              <div class="float-left"><h5>Access Mode: Viewer</h5></div>
-              <div class="float-right"><button type="button" class="btn btn-success">Save</button></div>
+                <div class="float-left">
+                    <button type="button" class="btn btn-primary">Load test data</button>
+                </div>
+              <div class="float-right">
+                <button type="button" class="btn btn-success">Save</button>
+            </div>
             </div>
           </footer>
 
